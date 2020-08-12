@@ -1,0 +1,60 @@
+.btnAsSeedsComputer {
+-fx-background-color:red;
+  -fx-background-radius: 16.4;
+  -fx-background-insets: 1.4;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 6;
+  -fx-font-size: 18;
+  -fx-body-color:red; /*#ff0000;*/
+  -fx-text-fill: #060d3c;
+  -fx-focus-traversable:true;
+}
+
+.buttonMancalaComputer {
+  -fx-background-color: #ff0000;/*red*/
+  -fx-background-radius: 56.4;
+  -fx-background-insets: 1.4;
+  -fx-border-radius: 35;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 6;
+  -fx-font-size: 18;
+  -fx-min-height: 65;
+  -fx-min-width: 45;
+  -fx-focus-traversable:true;
+  /*-fx-shape;*/
+}
+
+.btnAsSeedsHuman {
+-fx-background-color:
+        blue;
+  -fx-background-radius: 16.4;
+  -fx-background-insets: 1.4;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 6;
+  -fx-font-size: 18;
+  -fx-body-color:blue; /*#ff0000;*/
+  /*-fx-text-fill: #060d3c;*/
+  -fx-focus-traversable:true;
+}
+
+
+.buttonMancalaHuman {
+  -fx-background-color: blue;
+  -fx-background-radius: 56.4;
+  -fx-background-insets: 1.4;
+  -fx-border-radius: 35;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 6;
+  -fx-font-size: 18;
+  -fx-min-height: 65;
+  -fx-min-width: 45;
+  -fx-focus-traversable:true;
+  /*-fx-shape;*/
+}
+

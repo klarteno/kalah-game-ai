@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.GameUIController">
+   <children>
+      <SplitPane dividerPositions="0.2889447236180904" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <MenuButton alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Agent Computer Algorithm" wrapText="true">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                     <font>
+                        <Font name="Nirmala UI Bold" size="12.0" />
+                     </font>
+                  </MenuButton>
+                  <TextArea layoutX="398.0" layoutY="-2.0" prefHeight="119.0" prefWidth="200.0" promptText="here goes notifications">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                  <Button fx:id="scoreHuman" contentDisplay="CENTER" layoutX="310.0" layoutY="47.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="80.0" style="-fx-background-color: blue;" text="13" textAlignment="CENTER" textFill="#45e310" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="DejaVu Sans ExtraLight" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="scoreComputer" contentDisplay="CENTER" layoutX="210.0" layoutY="47.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="68.0" style="-fx-background-color: red;" text="13" textAlignment="CENTER" textFill="#060d3c" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="DejaVu Sans ExtraLight" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="210.0" layoutY="26.0" text="Score computer" />
+                  <Label layoutX="310.0" layoutY="26.0" text="Score Human" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="598.0">
+               <children>
+                  <TilePane hgap="10.0" layoutX="14.0" layoutY="80.0" maxWidth="-Infinity" prefColumns="6" prefHeight="74.0" prefRows="2" prefTileHeight="30.0" prefTileWidth="150.0" prefWidth="578.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+                     <children>
+                        <Button fx:id="mancalaComputer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="buttonMancalaComputer" stylesheets="@styles.css" text="4" TilePane.alignment="CENTER">
+                           <TilePane.margin>
+                              <Insets top="15.0" />
+                           </TilePane.margin></Button>
+                        <TextField fx:id="notificationBoard" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: green;" text="red turn is next">
+                           <font>
+                              <Font name="DejaVu Sans Bold" size="18.0" />
+                           </font>
+                           <TilePane.margin>
+                              <Insets top="15.0" />
+                           </TilePane.margin></TextField>
+                        <Button fx:id="mancalaHuman" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="buttonMancalaHuman" stylesheets="@styles.css" text="4" textFill="#43e50e">
+                           <TilePane.margin>
+                              <Insets top="15.0" />
+                           </TilePane.margin>
+                           <font>
+                              <Font name="DejaVu Sans Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" top="15.0" />
+                     </padding>
+                  </TilePane>
+                  <TilePane hgap="30.0" layoutX="90.0" layoutY="165.0" prefHeight="58.0" prefWidth="447.0">
+                     <children>
+                        <Button fx:id="pit1Human" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseEntered="#onEnterPit1Human" onMouseExited="#onExitPit1Human" onMouseReleased="#onClickPit1Human" styleClass="btnAsSeedsHuman" stylesheets="@styles.css" text="4" textFill="#43e50e" TilePane.alignment="CENTER">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit2Human" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit2Human" onMouseExited="#onExitPit2Human" onMouseReleased="#onClickPit2Human" styleClass="btnAsSeedsHuman" stylesheets="@styles.css" text="4" textFill="#43e50e">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit3Human" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit3Human" onMouseExited="#onExitPit3Human" onMouseReleased="#onClickPit3Human" styleClass="btnAsSeedsHuman" stylesheets="@styles.css" text="4" textFill="#45e310">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit4Human" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit4Human" onMouseExited="#onExitPit4Human" onMouseReleased="#onClickPit4Human" stylesheets="@styles.css" text="4" textFill="#43e50e">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                           <styleClass>
+                              <String fx:value="btnAsSeedsHuman" />
+                              <String fx:value="btnAsSeedsHuman" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="pit5Human" alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit5Human" onMouseExited="#onExitPit5Human" onMouseReleased="#onClickPit5Human" styleClass="btnAsSeedsHuman" stylesheets="@styles.css" text="4" textFill="#45e310">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit6Human" alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit6Human" onMouseExited="#onExitPit6Human" onMouseReleased="#onClickPit6Human" styleClass="btnAsSeedsHuman" stylesheets="@styles.css" text="4" textFill="#45e310">
+                           <TilePane.margin>
+                              <Insets left="5.0" top="15.0" />
+                           </TilePane.margin>
+                        </Button>
+                     </children>
+                  </TilePane>
+                  <TilePane hgap="30.0" layoutX="90.0" layoutY="14.0" prefHeight="58.0" prefWidth="447.0">
+                     <children>
+                        <Button fx:id="pit6Computer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseEntered="#onEnterPit6Computer" onMouseExited="#onExitPit6Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4" TilePane.alignment="CENTER">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit5Computer" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit5Computer" onMouseExited="#onExitPit5Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit4Computer" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit4Computer" onMouseExited="#onExitPit4Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit3Computer" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit3Computer" onMouseExited="#onExitPit3Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit2Computer" alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit2Computer" onMouseExited="#onExitPit2Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                        <Button fx:id="pit1Computer" alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="10.0" mnemonicParsing="false" onMouseEntered="#onEnterPit1Computer" onMouseExited="#onExitPit1Computer" styleClass="btnAsSeedsComputer" stylesheets="@styles.css" text="4">
+                           <TilePane.margin>
+                              <Insets left="2.0" top="7.0" />
+                           </TilePane.margin>
+                        </Button>
+                     </children>
+                  </TilePane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

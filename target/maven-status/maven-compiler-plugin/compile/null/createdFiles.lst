@@ -1,0 +1,15 @@
+org\openjfx\Game.class
+org\openjfx\agents\ComputerAgentAlphaBetaMemoised$TransEntry.class
+org\openjfx\agents\ComputerAgentAlphaBetaMemoised$ChildMove.class
+org\openjfx\agents\ComputerAgentAlphaBetaMemoised$MoveScore.class
+org\openjfx\GameUIController.class
+module-info.class
+org\openjfx\Board.class
+org\openjfx\agents\NodeState.class
+org\openjfx\agents\ComputerAgentRandom.class
+org\openjfx\Board$BoardStatus.class
+org\openjfx\agents\ComputerAgentMCTS.class
+org\openjfx\agents\ComputerAgentAlphaBeta.class
+org\openjfx\agents\ComputerAgentAlphaBetaMemoised.class
+org\openjfx\App.class
+org\openjfx\agents\ComputerAgentAI.class
